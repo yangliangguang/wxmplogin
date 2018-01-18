@@ -1,0 +1,30 @@
+{
+  "name": "mplogin公众号版",
+  "source": "./source/",
+  "main": "index.html",
+  "nodejs": true,
+  "width": 100,
+  "height": 200,
+  "permissions": [
+    "webview",
+    "chrome-extension://*"
+  ],
+  "chromium-args": "--allow-running-insecure-content --ignore-certificate-errors",
+  "webkit": {
+    "plugin": true
+  },
+  "window": {
+    "title": "公众号版",
+    "position": "center",
+    "width": 1200,
+    "height": 800,
+    "frame": true,
+    "resizable": true,
+    "min_width": 1200,
+    "min_height": 800
+  },
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
